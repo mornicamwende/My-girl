@@ -26,10 +26,10 @@ h2{
 }
 div .visho{
     color:black;
-    font-family:sans-serif;
+    font-family:monospace;
     font-weight: bold;
     font-size:700%;
-    line-height:20%;
+    line-height:o.5%;
 }
 
 h4,h5{
@@ -181,4 +181,12 @@ img {vertical-align: middle;}
     width:0.2%;
     padding:left ;
     
+}
+h{
+  font-size:50px;
+  font-weight:bold;
+}
+h9{
+  font-size:50px;
+  font-weight: bold;
 }
