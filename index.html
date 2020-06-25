@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" >
+    <title>MY GIRL INTERNATIONAL</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+<h1>My girl international</h1>
+<div class="Top">
+    <div id="Navigation">
+        <a class="active" href="index.html">Home</a>
+        <a class="button" href="about-us.html">About us</a>
+        <a class="button" href="Our-work.html">Our work</a>
+        <a class="button" href="Contact.html">Contacts</a>
+    </div>
+</div>
+
+<div class="slide show container">
+    <div class="mySlides fade">
+        <div class="numbertext">1/4</div>
+        <img src="girl4.jpg">
+        <div class="text">With you every step of the way</div>
+        </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2/4</div>
+        <img src="girl3.jpg">
+        <div class="text">Girl child life matter</div>
+    </div>
+        <div class="mySlides fade">
+        <div class="numbertext">3/4</div>
+        <img src="girl4.jpg">
+        <div class="text">We value the girl child</div>
+    </div>
+        <div class="mySlides fade">
+        <div class="numbertext">4/4</div>
+        <img src="girl1.jpg">
+    <div class="text">With you till the end</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div>
+    <span class="dot" onclick="currentslides(1)"></span>
+    <span class="dot" onclick="currentslides(2)"></span>
+    <span class="dot" onclick="currentslides(3)"></span>
+    <span class="dot" onclick="currentslides(4)"></span>
+</div>
+    <div class="home">
+    <h2>Welcome to my girl international</h2>
+        <p>
+            we recognise that girls and women in the world face social, cultural, institutional and systemic barriers to their rights. These include child marriage, poverty, child labour, female genital cutting/mutilation, gender-based violence and lack of information on sexual reproductive health and rights. As a rights-based organization, we remain committed to working with the hard to reach and marginalized girls and women in communities to enhance their quality of life.
+
+We partner with National Governments, development partners, public and private partners, membership organizations and other like-minded organizations and communities to realize the Global Goals related to girls and  women.
+
+Our programs target vulnerable and marginalized girls and women for inclusive development, quality education, good health and sustainable livelihoods.
+
+We advocate for inclusive laws and policies protecting girls and women ssssto enhance their participation.
+        </p>
+
+    </div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+
+</script>
+
+
+    </body>
+    <footer>Together lets hold hands and see the girl child shine</footer>
+    <div id="copy">
+        <p>Copyright © 2020 My girl international</p>
+    </div>
+
+
+
+</html>
